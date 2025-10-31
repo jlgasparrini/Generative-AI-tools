@@ -59,7 +59,7 @@ The output should be pure markdown, with clear headings and consistent formattin
 
 ![alt text](./images/image1.png)
 
-Claude generate a good plan for start, but I prefer to validate it and make any necessary change.
+Claude generated a good plan for start, but I prefer to validate it and make any necessary change.
 After review every step I used the plan to generate the code.
 
 In this situation, before upload the plan I removed testing sections, API docs, validations, CORS and any extra suggestions because were not required for this exercise.
@@ -131,7 +131,7 @@ I already started to generate the code and I'm validating every step first befor
 
 ![alt text](./images/image3.png)
 
-Now you can see, I'm waiting for approval before proceed to the next step. I'm also showing what files I created/modified and what commands I ran. I prefer to validate every step so I can have entire control about the code generation process.
+Now you can see, I'm waiting for approval before move on. I'm also showing what files I created/modified and what commands I ran. I prefer to validate every step so I can have entire control about the code generation process.
 
 Step 1 is completed, let's commit and proceed to the next step.
 
@@ -192,3 +192,15 @@ Nothing important to mention, I just generate routes and I test it manually to v
 
 Serializer generated properly, testing the code I can see the first request responses.
 
+### Step 11
+
+Error handling implemented properly, testing the code I can see the first request responses.
+
+### Step 12
+
+DB population implemented properly, testing the code I can see the first request responses.
+
+## Final Notes
+
+I hope this helps you to understand how I use the code generation process and the final result.
+The backend is now complete. I validated each step manually to ensure all user stories met their acceptance criteria. While AI can automate this validation, I prefer to review outputs directly to maintain full control and code quality.
