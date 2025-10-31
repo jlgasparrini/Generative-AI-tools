@@ -178,4 +178,13 @@ Add authentication concern - The same step as before, every file was reviewed an
 
 When I worked with Windsurf, I apreciate to have a complete detailed result of the code generation process.
 
-### Step 7
+### Step 7 & 8
+
+When the steps are similar implementations I prefer to join them in the same commit.
+
+Next steps I'm commiting step by step but there is no going to be screenshots because I suppose is no anything else useful to show you.
+
+### Step 9
+
+Nothing important to mention, I just generate routes and I test it manually to validate that everything is correct.
+

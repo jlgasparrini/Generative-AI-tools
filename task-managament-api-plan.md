@@ -37,8 +37,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ### Epic 1: User Management
 
 #### US-001: User Registration
-**As a** new user  
-**I want to** register for an account  
+**As a** new user
+**I want to** register for an account
 **So that** I can create and manage my tasks
 
 **Acceptance Criteria:**
@@ -53,8 +53,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ---
 
 #### US-002: User Authentication
-**As a** registered user  
-**I want to** log in with my credentials  
+**As a** registered user
+**I want to** log in with my credentials
 **So that** I can access my tasks securely
 
 **Acceptance Criteria:**
@@ -69,8 +69,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ### Epic 2: Task CRUD Operations
 
 #### US-003: Create Task
-**As a** authenticated user  
-**I want to** create a new task  
+**As a** authenticated user
+**I want to** create a new task
 **So that** I can track things I need to do
 
 **Acceptance Criteria:**
@@ -86,8 +86,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ---
 
 #### US-004: View All Tasks
-**As a** authenticated user  
-**I want to** view a list of all my tasks  
+**As a** authenticated user
+**I want to** view a list of all my tasks
 **So that** I can see what I need to work on
 
 **Acceptance Criteria:**
@@ -102,8 +102,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ---
 
 #### US-005: View Single Task
-**As a** authenticated user  
-**I want to** view details of a specific task  
+**As a** authenticated user
+**I want to** view details of a specific task
 **So that** I can see all information about that task
 
 **Acceptance Criteria:**
@@ -118,8 +118,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ---
 
 #### US-006: Update Task
-**As a** authenticated user  
-**I want to** update an existing task  
+**As a** authenticated user
+**I want to** update an existing task
 **So that** I can modify task details or change its status
 
 **Acceptance Criteria:**
@@ -136,8 +136,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 ---
 
 #### US-007: Delete Task
-**As a** authenticated user  
-**I want to** delete a task  
+**As a** authenticated user
+**I want to** delete a task
 **So that** I can remove tasks I no longer need
 
 **Acceptance Criteria:**
@@ -188,21 +188,21 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
    - [x] Include in `Api::V1::BaseController`
 
 7. **Generate controllers**
-   - [ ] `rails g controller api/v1/users --no-helper --no-assets`
-   - [ ] `rails g controller api/v1/auth --no-helper --no-assets`
-   - [ ] `rails g controller api/v1/tasks --no-helper --no-assets`
+   - [x] `rails g controller api/v1/users --no-helper --no-assets`
+   - [x] `rails g controller api/v1/auth --no-helper --no-assets`
+   - [x] `rails g controller api/v1/tasks --no-helper --no-assets`
 
 8. **Implement endpoints**
-   - [ ] `POST /api/v1/users` (sign up) → creates user
-   - [ ] `POST /api/v1/auth/login` → returns token
-   - [ ] `GET /api/v1/tasks` → current_user tasks
-   - [ ] `GET /api/v1/tasks/:id` → current_user task
-   - [ ] `POST /api/v1/tasks` → create task for current_user
-   - [ ] `PATCH /api/v1/tasks/:id` → update current_user task
-   - [ ] `DELETE /api/v1/tasks/:id` → delete current_user task
+   - [x] `POST /api/v1/users` (sign up) → creates user
+   - [x] `POST /api/v1/auth/login` → returns token
+   - [x] `GET /api/v1/tasks` → current_user tasks
+   - [x] `GET /api/v1/tasks/:id` → current_user task
+   - [x] `POST /api/v1/tasks` → create task for current_user
+   - [x] `PATCH /api/v1/tasks/:id` → update current_user task
+   - [x] `DELETE /api/v1/tasks/:id` → delete current_user task
 
 9. **Routes**
-   - [ ] Update `config/routes.rb`:
+   - [x] Update `config/routes.rb`:
      ```ruby
      Rails.application.routes.draw do
        namespace :api do
@@ -215,15 +215,15 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
      end
      ```
 
-11. **Serializers / JSON shape**
+10. **Serializers / JSON shape**
     - [ ] Create `app/serializers/task_serializer.rb`
     - [ ] Use serializer in `index`, `show`, `create`, `update`
 
-12. **Error handling**
+11. **Error handling**
     - [ ] Add `rescue_from ActiveRecord::RecordNotFound` in `Api::V1::BaseController`
     - [ ] Return `{ error: "Not Found" }`, status 404
 
-13. **Seed data (for testing)**
+12. **Seed data (for testing)**
     - [ ] Create 1 user with known `api_token`
     - [ ] Create 3–5 tasks for that user
 
