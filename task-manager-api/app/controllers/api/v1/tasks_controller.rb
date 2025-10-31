@@ -4,12 +4,12 @@ class Api::V1::TasksController < Api::V1::BaseController
   # GET /api/v1/tasks
   def index
     tasks = current_user.tasks
-    render json: { tasks: tasks }, status: :ok
+    render json: { tasks: TaskSerializer.serialize_collection(tasks) }, status: :ok
   end
 
   # GET /api/v1/tasks/:id
   def show
-    render json: { task: @task }, status: :ok
+    render json: { task: TaskSerializer.serialize(@task) }, status: :ok
   end
 
   # POST /api/v1/tasks
@@ -17,7 +17,7 @@ class Api::V1::TasksController < Api::V1::BaseController
     task = current_user.tasks.build(task_params)
 
     if task.save
-      render json: { task: task }, status: :created
+      render json: { task: TaskSerializer.serialize(task) }, status: :created
     else
       render json: { errors: task.errors.full_messages }, status: :unprocessable_entity
     end
@@ -26,7 +26,7 @@ class Api::V1::TasksController < Api::V1::BaseController
   # PATCH/PUT /api/v1/tasks/:id
   def update
     if @task.update(task_params)
-      render json: { task: @task }, status: :ok
+      render json: { task: TaskSerializer.serialize(@task) }, status: :ok
     else
       render json: { errors: @task.errors.full_messages }, status: :unprocessable_entity
     end
@@ -41,11 +41,7 @@ class Api::V1::TasksController < Api::V1::BaseController
   private
 
   def set_task
-    @task = current_user.tasks.find_by(id: params[:id])
-    
-    if @task.nil?
-      render json: { error: "Task not found" }, status: :not_found
-    end
+    @task = current_user.tasks.find(params[:id])
   end
 
   def task_params

@@ -188,3 +188,7 @@ Next steps I'm commiting step by step but there is no going to be screenshots be
 
 Nothing important to mention, I just generate routes and I test it manually to validate that everything is correct.
 
+### Step 10
+
+Serializer generated properly, testing the code I can see the first request responses.
+

@@ -216,12 +216,12 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
      ```
 
 10. **Serializers / JSON shape**
-    - [ ] Create `app/serializers/task_serializer.rb`
-    - [ ] Use serializer in `index`, `show`, `create`, `update`
+    - [x] Create `app/serializers/task_serializer.rb`
+    - [x] Use serializer in `index`, `show`, `create`, `update`
 
 11. **Error handling**
-    - [ ] Add `rescue_from ActiveRecord::RecordNotFound` in `Api::V1::BaseController`
-    - [ ] Return `{ error: "Not Found" }`, status 404
+    - [x] Add `rescue_from ActiveRecord::RecordNotFound` in `Api::V1::BaseController`
+    - [x] Return `{ error: "Not Found" }`, status 404
 
 12. **Seed data (for testing)**
     - [ ] Create 1 user with known `api_token`
