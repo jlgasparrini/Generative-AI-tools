@@ -2,11 +2,7 @@ class Task < ApplicationRecord
   belongs_to :user
 
   # Enum for status
-  enum status: {
-    pending: "pending",
-    in_progress: "in_progress",
-    completed: "completed"
-  }
+  enum :status, { pending: "pending", in_progress: "in_progress", completed: "completed" }
 
   # Validations
   validates :title, presence: true

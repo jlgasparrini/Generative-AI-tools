@@ -224,8 +224,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
     - [x] Return `{ error: "Not Found" }`, status 404
 
 12. **Seed data (for testing)**
-    - [ ] Create 1 user with known `api_token`
-    - [ ] Create 3–5 tasks for that user
+    - [x] Create 1 user with known `api_token`
+    - [x] Create 3–5 tasks for that user
 
 ## Success Criteria
 
