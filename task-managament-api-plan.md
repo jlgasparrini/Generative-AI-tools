@@ -166,16 +166,16 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
    - [x] Run `bundle install`
 
 3. **Generate User model**
-   - [ ] `rails g model User email:string:uniq password_digest:string api_token:string:uniq`
-   - [ ] Add `has_secure_password` to `app/models/user.rb`
-   - [ ] Add validations for email uniqueness
-   - [ ] Run `rails db:migrate`
+   - [x] `rails g model User email:string:uniq password_digest:string api_token:string:uniq`
+   - [x] Add `has_secure_password` to `app/models/user.rb`
+   - [x] Add validations for email uniqueness
+   - [x] Run `rails db:migrate`
 
 4. **Generate Task model**
-   - [ ] `rails g model Task user:references title:string description:text status:string due_date:date`
-   - [ ] Add enum or validation for `status` (pending, in_progress, completed)
-   - [ ] Add validation for `title` presence
-   - [ ] Run `rails db:migrate`
+   - [x] `rails g model Task user:references title:string description:text status:string due_date:date`
+   - [x] Add enum or validation for `status` (pending, in_progress, completed)
+   - [x] Add validation for `title` presence
+   - [x] Run `rails db:migrate`
 
 5. **Namespace API**
    - [ ] Create `app/controllers/api/v1/base_controller.rb`
