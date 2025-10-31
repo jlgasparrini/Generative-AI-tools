@@ -72,6 +72,8 @@ Here is the final plan I used:
 
 After validating the plan, I used Windsurf to generate the Rails API step by step, following the instructions in the plan.
 
+It's important to mention that in some situations I use [Warp](https://warp.dev) but not necessary to generate the code, in some situations I can take advantage of Warp and complete minor stuff without the need to consume all Windsurf credits.
+
 Before prompting Windsurf, I usually review rules and context/constraints to keep the code generation aligned with the project requirements.
 
 ```markdown
@@ -134,3 +136,12 @@ Now you can see, I'm waiting for approval before proceed to the next step. I'm a
 Step 1 is completed, let's commit and proceed to the next step.
 
 ![alt text](images/image4.png)
+
+### Step 2
+
+One important note to mention is I use the plan no only to provide a better context to Windsurf, I use it to validate if every step is properly completed.
+
+In this image you can appreciate how I can quickly decide if every piece of code is correct and ready to commit.
+![alt text](./images/image5.png)
+
+Step 2 is completed, let's commit and proceed to the next step.

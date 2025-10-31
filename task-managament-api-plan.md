@@ -161,9 +161,9 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
    - [x] Run `rails db:create`
 
 2. **Add core gems (if not present)**
-   - [ ] Add `gem "jwt"` (or `devise-jwt` if using Devise)
-   - [ ] Add `gem "rack-cors"`
-   - [ ] Run `bundle install`
+   - [x] Add `gem "jwt"` (or `devise-jwt` if using Devise)
+   - [x] Add `gem "rack-cors"`
+   - [x] Run `bundle install`
 
 3. **Generate User model**
    - [ ] `rails g model User email:string:uniq password_digest:string api_token:string:uniq`
