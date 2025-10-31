@@ -170,3 +170,12 @@ Namespace API - Every file was reviewed and everything is correct and ready to c
 
 Step 5 is completed, let's commit and proceed to the next step.
 
+### Step 6
+
+Add authentication concern - The same step as before, every file was reviewed and everything is correct and ready to commit. Also is important to mention that I wrote my own commit messages, I don't use the one provided by Windsurf because my focus is the same, I prefer to have control.
+
+![alt text](./images/image9.png)
+
+When I worked with Windsurf, I apreciate to have a complete detailed result of the code generation process.
+
+### Step 7

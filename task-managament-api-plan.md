@@ -182,10 +182,10 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
    - [x] Set it to inherit from `ActionController::API`
 
 6. **Add authentication concern**
-   - [ ] Create `app/controllers/concerns/authenticable.rb`
-   - [ ] Implement Bearer token lookup (`Authorization: Bearer <token>`)
-   - [ ] On failure return `401` JSON error
-   - [ ] Include in `Api::V1::BaseController`
+   - [x] Create `app/controllers/concerns/authenticable.rb`
+   - [x] Implement Bearer token lookup (`Authorization: Bearer <token>`)
+   - [x] On failure return `401` JSON error
+   - [x] Include in `Api::V1::BaseController`
 
 7. **Generate controllers**
    - [ ] `rails g controller api/v1/users --no-helper --no-assets`
