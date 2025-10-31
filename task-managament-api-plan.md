@@ -156,9 +156,9 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
 > The following steps are ordered. Each step should be executed before moving to the next one.
 
 1. **Create Rails API project**
-   - [ ] Run `rails new task-manager-api --api --database=postgresql`
-   - [ ] Configure database in `config/database.yml`
-   - [ ] Run `rails db:create`
+   - [x] Run `rails new task-manager-api --api --database=postgresql`
+   - [x] Configure database in `config/database.yml`
+   - [x] Run `rails db:create`
 
 2. **Add core gems (if not present)**
    - [ ] Add `gem "jwt"` (or `devise-jwt` if using Devise)

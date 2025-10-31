@@ -118,3 +118,19 @@ Please confirm you understand these instructions and are ready to start working 
 ```
 
 Meanwhile, I'm going to commit first the plan and the prompts to keep track of the project history.
+
+## Project History
+
+![alt text](./images/image2.png)
+
+I already started to generate the code and I'm validating every step first before commit.
+
+### Step 1
+
+![alt text](./images/image3.png)
+
+Now you can see, I'm waiting for approval before proceed to the next step. I'm also showing what files I created/modified and what commands I ran. I prefer to validate every step so I can have entire control about the code generation process.
+
+Step 1 is completed, let's commit and proceed to the next step.
+
+![alt text](images/image4.png)
