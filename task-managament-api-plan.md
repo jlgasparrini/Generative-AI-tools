@@ -178,8 +178,8 @@ A RESTful API built with Ruby on Rails for managing tasks. The system provides c
    - [x] Run `rails db:migrate`
 
 5. **Namespace API**
-   - [ ] Create `app/controllers/api/v1/base_controller.rb`
-   - [ ] Set it to inherit from `ActionController::API`
+   - [x] Create `app/controllers/api/v1/base_controller.rb`
+   - [x] Set it to inherit from `ActionController::API`
 
 6. **Add authentication concern**
    - [ ] Create `app/controllers/concerns/authenticable.rb`

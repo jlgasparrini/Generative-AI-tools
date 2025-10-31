@@ -161,3 +161,12 @@ User and Task models generated properly, everything is correct and ready to comm
 ![alt text](./images/image7.png)
 
 Step 4 is completed, let's commit and proceed to the next step.
+
+### Step 5
+
+Namespace API - Every file was reviewed and everything is correct and ready to commit.
+
+![alt text](./images/image8.png)
+
+Step 5 is completed, let's commit and proceed to the next step.
+
